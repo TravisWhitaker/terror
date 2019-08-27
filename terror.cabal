@@ -1,0 +1,23 @@
+cabal-version:       2.2
+name:                terror
+version:             0.1.0.0
+synopsis:            The Terrifying Build System
+description:         The Terrifying Build System
+homepage:            https://github.com/TravisWhitaker/terror
+bug-reports:         https://github.com/TravisWhitaker/terror
+license:             MIT
+license-file:        LICENSE
+author:              Travis Whitaker
+maintainer:          pi.boy.travis@gmail.com
+copyright:           Travis Whitaker 2019
+category:            Development
+extra-source-files:  CHANGELOG.md, README.md
+
+executable terror
+  main-is:             Main.hs
+  -- other-modules:      
+  build-depends:       base ^>=4.12.0.0
+                     , dhall
+                     , shake
+  hs-source-dirs:      src
+  default-language:    Haskell2010
